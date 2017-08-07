@@ -1,5 +1,5 @@
 '''
-  This program prints Armstrong number from 0-1000
+  This program prints Armstrong numbers from 0-1000
   By AbdealiB
   https://github.com/AbdealiB/Armstrong-Number
 '''
@@ -18,4 +18,3 @@ def main(num=1000):
     nums = [i for i in range(num) if armstrong(i)]
     print("The Armstrong Numbers are: ",nums)
 main()
-
