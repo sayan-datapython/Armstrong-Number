@@ -1,10 +1,8 @@
 '''
-  Calculating Armstrong Number
+  This program takes any integer from 0-1000 as input and prints out if it's an Armstrong number or not.
   By AbdealiB
   https://github.com/AbdealiB/Armstrong-Number
 '''
-
-import time
 
 def armstrong(num):
     temp = num
@@ -26,5 +24,3 @@ def main(num=1000):
 
 
 main()
-
-
