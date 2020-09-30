@@ -5,10 +5,11 @@
 '''
 
 def armstrong(num):
+    len_num=len(str(num))
     temp = num
     remainder = 0
     while temp > 0:
-        remainder += (temp % 10) ** 3
+        remainder += (temp % 10) ** len_num
         temp = temp // 10
     if num == remainder:
         return True
