@@ -4,11 +4,11 @@
   https://github.com/AbdealiB/Armstrong-Number
 '''
 
-def armstrong(num):
+def armstrong(num,length):
     temp = num
     remainder = 0
     while temp > 0:
-        remainder += (temp % 10) ** 3
+        remainder += (temp % 10) ** length
         temp = temp // 10
     if num == remainder:
         return True
@@ -16,11 +16,13 @@ def armstrong(num):
 
 def main(num=1000):
     armstrong_number = int(input("Enter a number to find if it's an Armstrong Number or not: "))
-    result = armstrong(armstrong_number)
+    len_num=len(armstrong_number)
+    result = armstrong(armstrong_number,len_num)
     if result:
         print("{} is an Armstrong Number.".format(armstrong_number))
     else:
         print("{} is not an Armstrong Number.".format(armstrong_number))
 
+if__name__=='__main__':
+  main()
 
-main()
